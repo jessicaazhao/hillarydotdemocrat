@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <script>
+        var cookies = document.cookie.split('=');
+        if (cookies[0] === "target") {
+            if (cookies[1] === "hillary") {
+                window.location.replace("http://www.hillaryclinton.com");
+            } else if (cookies[1] === "donald") {
+                window.location.replace("http://www.donaldjtrump.com");
+            }
+        }
+    </script>
+    <style>
+    .red {
+        background-color: #bc0000;
+        color: white;
+        font-size: 24px;
+    }
+    .blue {
+        background-color: #0057b8;
+        color: white;
+        font-size: 24px;
+    }
+    .bigger {
+        width: 100%;
+        height: 40px;
+    }
+    a.button:hover {
+        color: #c1c1c1;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- columns should be the immediate child of a .row -->
+        <div class="row">
+            <h1>&nbsp;</h1>
+        </div>
+        <div class="row">
+            <h2>Welcome to <b>hillary.democrat</b>.</h2>
+        </div>
+        <div class="row">
+            <h4>
+            I'm Jessica Zhao, and I'd like to work for the Hillary For America campaign as a full-time software engineer. <br>
+            You can find my resume <a href=Resume_JessicaZhao.pdf>here</a>.
+            </h4>
+        </div>
+        <div class="row">
+            <div class="three columns">&nbsp; </div>
+            <div class="six columns">
+                <h2>Give me an interview?<br></h2>
+            </div>
+            <div class="three columns">&nbsp; </div>
+        </div>
+        <div class="row">
+            <div class="six columns" align=center>
+                <a class="button blue bigger" href="yes.html">Yes</a>
+            </div>
+            <div class="six columns" align=center>
+                <a class="button red bigger" href="no.html">No</a>
+            </div>
+      </div>
+    </div>
+</body>
+</html>
